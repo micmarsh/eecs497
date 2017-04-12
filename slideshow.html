@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Western Music Time Machine</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-slide-content {font-size: 30px;}
+      .remark-slide-content h1 {font-size: 70px;}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono';
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+# Western Music Time Machine
+
+### A Presentation of Classical Music By Nation
+
+## Michael Marsh, Student
+
+![image](cljs.png)  ![image](first-started-smallest.png)
+---
+class: center, middle
+# Motivations and Goals
+---
+# Motivations: Personal
+
+* "Artistic Expression"
+
+ * Most appropriate for my modern skillset
+
+ * Plenty written connecting music, art, code
+
+* Learning
+
+ * Extend existing Clojure zealotry into client-side
+
+ * Complete a project to solidify skills
+---
+# (Slightly) More Concrete Goals
+
+* Categorize and present tracks
+ * by nation (map)
+
+ * by composer (list)
+ 
+ * by years composed, performed (timeline)
+
+* Learn specific technologies
+ * ClojureScript
+
+ * Re-Frame/React
+---
+# Goal: First Sketch
+![image](broad-sketch-small.png)
+---
+class: center, middle
+# Process and Major Milestones
+---
+# Process
+* Very loosely defined
+
+* Work towards something resembling sketch, "looking good"
+
+* Ended up being something like "Agile", but with random sprints
+
+* Stepped back a few times to re-evaluate assumptions
+---
+# Milestone: Data Definition
+![image](data.png)
+---
+# Milestone: Data Acquisition
+* Started with ~100 Composer, Track Name pairs
+
+* Place/time data per track very difficult, didn't do
+
+* Wikidata best ToS-free source for composer birth time/place
+---
+# Milestone: YouTube as Player
+* Quality of search immensely helpful
+
+* External streaming service: no bandwidth costs
+
+* Requires displaying video, had to modify UI
+---
+# YouTube Re-Design
+![image](stickies-small.jpg)
+---
+class: center, middle
+# Final Result
+---
+# Full Application
+![image](final-high-res-smaller.png)
+---
+# Full Application
+![image](alternative-view-small.png)
+---
+# Goals Met
+
+* Enables listening based on place
+
+* Presents a thematic interface 
+
+* Creates a novel dataset
+
+* "I learned a lot"
+---
+# Goals Not Met
+
+* Incomplete Functionality
+
+ * Doesn't utilize track date + place
+
+ * Couldn't get a timeline in UI
+
+* Difficult to scale dataset
+---
+class: center, middle
+# Next Steps
+---
+# Next Steps: Data
+* Normalization
+ * Deciding on target track length
+ * Standardizing track titles
+
+* Scaling up
+
+ * Adding tracks currently manual
+
+ * Leaning on user feedback requires users
+---
+# Next Steps: Application
+
+* General usability
+
+ * Ability to search for composers, tracks
+
+ * Easier queue manipulation
+
+* Mobile Application
+ * Practical listening for normal people
+---
+class: center, middle
+# Lessons Learned and Extrapolated
+---
+# Lessons: Having Time is Good
+
+* As a general employee
+
+ * Schedule meetings wisely
+
+ * Check email sparingly
+
+* As a manager
+ * Protect employees from outside communication
+---
+# Lessons: Responsibility
+
+* No part of project felt like wasting time
+
+* "Everything" was my responsibility, had to do
+
+* In a team, if something is unpleasant and unassigned, it will not get done
+---
+# Lessons: Having Time is Bad
+
+"Work expands to fill the time allotted it."
+
+* You need (from self or others)
+
+ * Milestones
+
+ * Deadlines (even "arbitrary")
+ * Outside Pressure
+---
+class: center, middle
+# Thank You!
+![image](done-small.png) ![image](clojure-ball-small.png)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
